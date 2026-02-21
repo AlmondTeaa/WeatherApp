@@ -1,0 +1,52 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: inherit;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 3rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(circle at bottom left,transparent 25%,#9dc9c1 25.5%, #9dc9c1 36%, transparent 37%, transparent 100%),radial-gradient(circle at top right,transparent 34%,#9dc9c1 34.5%, #9dc9c1 45.5%, transparent 46%, transparent 100%);
+        background-size: 3em 3em;
+        background-color: #fab2b2;
+        opacity: 0.95
+}
+
+h1.title {
+    font-weight: bolder;
+    font-size: 6rem;
+    padding-bottom: 2vh;
+}
+
+ p.title {
+   font-style: italic;
+   padding-bottom: 5vh;
+}
+
+input.cityInp {
+    width: 30vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+}
+
+button.cityInp {
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+
+}
