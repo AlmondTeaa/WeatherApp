@@ -7,12 +7,16 @@ const path = require('path');
 const app = express();
 
 //Set template
-app.set('view engine', ejs);
+app.set('view engine', 'ejs');
 //Serve public folder for CSS
 app.use(express.static("public"));
 //Parse req body
 app.use(bodyParser.urlencoded());
 
+
+app.get("/", (req,res,next) => {
+    res.render("index",{weather:null, error:null})
+})
 
 console.log("Server Listening to Port 3000");
 app.listen(3000);
