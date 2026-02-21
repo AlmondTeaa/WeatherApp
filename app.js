@@ -18,5 +18,12 @@ app.get("/", (req,res,next) => {
     res.render("index",{weather:null, error:null})
 })
 
+
+app.get("/weather", (req,res,next) => {
+    const city = req.query.location;
+    res.send(`Searching for weather in: ${city}`);
+})
+
+
 console.log("Server Listening to Port 3000");
 app.listen(3000);
