@@ -13,5 +13,26 @@
         <input type="text" name="location" placeholder="Input City" class="cityInp">
         <button type="submit" class="cityInp"> Search City</button>
     </form>
+    <% if (error) { %>
+        <div class="card">
+            <div class="header">
+                <h1><%= error %></h1>
+            </div>
+            <div class="container">
+                <p>Error</p>
+            </div>
+        </div>
+    <% } else { %>
+        <div class="polaroid">
+            <img src= "https://openweathermap.org/img/wn/<%= weather.icon %>.png" alt="weather icon" style="width:100%">
+            <div class="container">
+                <h1><%= city %></h1>
+                <p><%= weather.main %></p>
+                <p><%= weather.description %></p>
+                
+            </div>
+        </div>
+    <% } %>
+
 </body>
 </html>

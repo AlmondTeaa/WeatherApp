@@ -52,13 +52,13 @@ app.get("/weather",async (req,res,next) => {
 
     try {
         const weatherResponse = await fetchGetApi(apiURLWeather);
-        weather = weatherResponse.weather;
+        weather = weatherResponse.weather[0];
 
     } catch (apiError) {
         error = apiError;
     }
     
-    res.render("index", {weather, error});
+    res.render("index", {weather, error, city});
 })
 
 
