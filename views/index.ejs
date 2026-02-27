@@ -22,11 +22,11 @@
                 <p>Error</p>
             </div>
         </div>
-    <% } else { %>
+    <% } else if (weather) { %>
         <div class="polaroid">
-            <img src= "https://openweathermap.org/img/wn/<%= weather.icon %>.png" alt="weather icon" style="width:100%">
+            <img src= "https://openweathermap.org/img/wn/<%= weather.icon %>.png" alt="weatherIcon" style="width:100%">
             <div class="container">
-                <h1><%= city %></h1>
+                <h1> <%= city %></h1>
                 <p><%= weather.main %></p>
                 <p><%= weather.description %></p>
                 
